@@ -1,0 +1,228 @@
+@import url('https://mwittrien.github.io/BetterDiscordAddons/Themes/DiscordRecolor/DiscordRecolor.css');
+/*@import url('https://discordstyles.github.io/HorizontalServerList/dist/HorizontalServerList.css');*/
+
+	:root {
+		--font: "Roboto";
+		--accentcolor: #d65c5c;
+		--accentcolor2: #d65c5c;
+		--linkcolor: #7788aa;
+		--mentioncolor: #ffaa88;
+		--textbrightest: 221, 221, 221;
+		--textbrighter: 221, 221, 221;
+		--textbright: 185, 185, 185;
+		--textdark: 140, 140, 140;
+		--textdarker: 25, 25, 25;
+		--textdarkest: 25, 25, 25;
+		--backgroundaccent: 0, 0, 0;
+		--backgroundprimary: 0, 0, 0;
+		--backgroundsecondary: 0, 0, 0;
+		--backgroundsecondaryalt: 0, 0, 0;
+		--backgroundtertiary: 0, 0, 0;
+		--backgroundfloating: 0, 0, 0;
+		--settingsicons: 1;
+                --HSL-server-icon-size: 24px;
+                --HSL-server-spacing: 10px;
+	}
+
+	[class^="blockedMessageText"],
+	[class^="blockedIcon"],
+	[aria-label="Inbox"],
+	[aria-label="Threads"],
+	[aria-label="Notification Settings"],
+	[aria-label="Start Voice Call"],
+	[aria-label="Start Video Call"],
+	[aria-label="Add Friends to DM"],
+	[aria-label="Show User Profile (Unavailable)"],
+	[href="https://support.discord.com"],
+	a[data-list-item-id="private-channels-uid_19187___nitro"],
+	a[data-list-item-id="private-channels-uid_19187___shop"],
+	/*time[id*="message-timestamp"],*/
+	/* Hides message timestamps (meant for compact mode)*/
+	div[class="pill_a5ad63 wrapper_c4cd66"],
+        div[class="channelAppLauncher_df39bd"],
+	button[aria-label="Send a gift"],
+	button[aria-label="Open sticker picker"] {
+		display: none !important;
+	}
+
+	/* sidebar hover tweak */
+	nav[aria-label="Servers sidebar"] {
+		width: 12px;
+		transition: all 500ms cubic-bezier( 0.215, 0.61, 0.02, 0.97);
+		background-color: var(--background-primary) !important;
+	}
+	nav[aria-label="Servers sidebar"]:hover {
+		width: 70px;
+		background-color: var(--background-primary) !important;
+	}
+
+	nav[aria-label="Servers sidebar"] span.item-2LIpTv {
+		transition: all 200ms cubic-bezier( 0.215, 0.61, 0.02, 0.97);
+		background-color: transparent !important;
+	}
+	nav[aria-label="Servers sidebar"]:hover span.item-2LIpTv {
+		background-color: var(--background-primary) !important;
+	}
+
+	div.sidebar-1tnWFu {
+		width: 40px;
+		/*transition: width 0.4s;*/
+		transition: all 200ms cubic-bezier( 0.215, 0.61, 0.02, 0.97);
+		opacity: 0;
+	}
+	div.sidebar-1tnWFu:hover {
+		width: 250px;
+		opacity: 100%;
+	}
+
+	div.container-2o3qEW {
+		width: 15px;
+		transition: all 200ms cubic-bezier( 0.215, 0.61, 0.02, 0.97);
+		opacity: 0;
+	}
+	div.container-2o3qEW:hover {
+		width: 250px;
+		opacity: 100%;
+	}
+	div.sidebar-1tnWFu div.unread-36eUEm {
+		background-color: transparent !important;
+		color: transparent !important;
+		transition: background-color 0.2s cubic-bezier( 0.215, 0.61, 0.02, 0.97);
+	}
+	div.sidebar-1tnWFu:hover div.unread-36eUEm {
+		background-color: var(--unread-badge) !important;
+		color: var(--unread-badge) !important;
+	}
+	div.sidebar_e031be {
+		width: 5px;
+		transition: width 0.2s;
+	}
+	div.sidebar_e031be:hover {
+		width: 250px;
+		/*[class^="contents"] {
+        align-content: center;
+    };*/
+		scrollerInner__37fee {
+			padding-left: 20px;
+			transition: 0.2s cubic-bezier( 0.215, 0.61, 0.02, 0.97)
+		}
+	}
+	nav[aria-label="Servers sidebar"] {
+		width: 24px;
+                height: 100%;
+                z-index: 999;
+                display: flex;
+                position: absolute;
+		transition: all 500ms cubic-bezier( 0.215, 0.61, 0.02, 0.97);
+		/*background-color: var(--background-primary) !important;*/
+                opacity: 0;
+	}
+        div[class="pill_f9623d wrapper_c4cd66"]{ display: none; }
+	nav[aria-label="Servers sidebar"]:hover {
+		width: 70px;
+                opacity: 1;
+	}
+
+	nav[aria-label="Servers sidebar"] span.item-2LIpTv {
+		transition: all 500ms cubic-bezier( 0.215, 0.61, 0.02, 0.97);
+		background-color: transparent !important;
+	}
+	nav[aria-label="Servers sidebar"]:hover span.item-2LIpTv {
+		background-color: var(--background-primary) !important;
+	}
+
+	div.sidebar-1tnWFu {
+		width: 24px;
+                display: flex;
+		/*transition: width 0.4s;*/
+		transition: all 500ms cubic-bezier(0.215, 0.61, 0.02, 0.97);
+		opacity: 0;
+	}
+	div.sidebar-1tnWFu:hover {
+		width: 250px;
+                left: calc(100% - 250px);
+		opacity: 100%;
+	}
+	div.sidebar_a4d4d9 {
+                border: 3px solid #191919;
+                border-radius: 20px 0px 0px 20px;
+                max-height: calc(100% - 6rem);
+                margin-top: 3rem;
+                margin-bottom: 3rem;
+                margin-left: 3rem;
+		width: 24px;
+                display: flex;
+                overflow: scroll;
+                position: absolute;
+                left: calc(100% - (24px + 3px + 3rem));
+                align-self: center;
+                z-index: 999;
+		transition: all 500ms cubic-bezier(0.215, 0.61, 0.02, 0.97);
+		opacity: 0;
+	}
+	div.sidebar_a4d4d9:hover {
+                --width: 240px;
+		width: var(--width);
+                left: calc(100% - var(--width) - 3px - 3rem);
+		opacity: 100%;
+	}
+
+	div.container-2o3qEW {
+		width: 15px;
+		transition: all 200ms cubic-bezier( 0.215, 0.61, 0.02, 0.97);
+		opacity: 0;
+	}
+	div.container-2o3qEW:hover {
+		width: 250px;
+		opacity: 100%;
+	}
+	div.sidebar-1tnWFu div.unread-36eUEm {
+		background-color: transparent !important;
+		color: transparent !important;
+		transition: background-color 0.2s cubic-bezier( 0.215, 0.61, 0.02, 0.97);
+	}
+	div.sidebar-1tnWFu:hover div.unread-36eUEm {
+		background-color: var(--unread-badge) !important;
+		color: var(--unread-badge) !important;
+	}
+	div.sidebar_e031be {
+		width: 5px;
+		transition: width 0.2s;
+	}
+	div.sidebar_e031be:hover {
+		width: 250px;
+		/*[class^="contents"] {
+        align-content: center;
+    };*/
+		scrollerInner__37fee {
+			padding-left: 20px;
+			transition: 0.2s cubic-bezier( 0.215, 0.61, 0.02, 0.97)
+		}
+	}
+
+	[class="scrollableContainer_d0696b themedBackground_d0696b"] {
+		border: 3px solid !important;
+		border-color: #191919 !important;
+		border-radius: 20px !important;
+	}
+
+	[class="nameTag_b2ca13 canCopy_b2ca13"] {
+		[class="panelTitleContainer_b2ca13"] {
+			[class="text-sm/normal_dc00ef title_d1da5f"] {
+				background: linear-gradient(135deg, #dddddd, #50aaff) !important;
+				background: -webkit-linear-gradient(135deg, #dddddd, #50aaff) !important;
+				-webkit-background-clip: text !important;
+				background-clip: text !important;
+				color: transparent !important;
+			}
+		}
+	}
+        
+        div[class="flex_bba380 horizontal_bba380 justifyStart_ec1a20 alignStretch_ec1a20 noWrap_ec1a20 buttons_b2ca13"] {
+          opacity: 0.1;
+          transition: 800ms cubic-bezier( 0.215, 0.61, 0.02, 0.97)
+        }
+
+        div[class="flex_bba380 horizontal_bba380 justifyStart_ec1a20 alignStretch_ec1a20 noWrap_ec1a20 buttons_b2ca13"]:hover {
+          opacity: 1;
+        }
