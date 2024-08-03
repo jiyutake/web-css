@@ -5,9 +5,16 @@
 @description    Confortable layout changes featuring a pitch black background.
 @author         jiyutake
 ==/UserStyle== */
-/* DISCLAIMER
+
+/* 
+ * ######################
+ * ##### DISCLAIMER #####
+ * ######################
+ *
  * There's an issue in Firefox on which Stylus can't get @import to work due to Content Security Policy. This is circunvented on this file through the use of the raw code from other people, mainly from MircoWittrien, meaning that i do not own some of the code on this file. Their code is separated through the use of comments indicating the start and the end of each file, as well as the source URL.
-*/
+ * 
+ */
+
 @-moz-document url-prefix("https://canary.discord.com/") {
 	/* file start: DiscordRecolor.css
 	 * from: https://mwittrien.github.io/BetterDiscordAddons/Themes/DiscordRecolor/DiscordRecolor.css */
