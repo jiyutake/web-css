@@ -15,7 +15,7 @@
  * 
  */
 
-@-moz-document url-prefix("https://canary.discord.com/") {
+@-moz-document regexp("http*:\/\/*.discord.com\/*") {
 	/* start of @import files */
 	/* file start: DiscordRecolor.css
 	 * from: https://mwittrien.github.io/BetterDiscordAddons/Themes/DiscordRecolor/DiscordRecolor.css */
