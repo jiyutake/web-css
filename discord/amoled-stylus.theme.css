@@ -15,7 +15,7 @@
  * 
  */
 
-@-moz-document regexp("http*:\/\/*.discord.com\/*") {
+@-moz-document domain(discord.com) {
 	/* start of @import files */
 	/* file start: DiscordRecolor.css
 	 * from: https://mwittrien.github.io/BetterDiscordAddons/Themes/DiscordRecolor/DiscordRecolor.css */
