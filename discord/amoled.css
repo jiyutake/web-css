@@ -3,10 +3,10 @@
 
 	:root {
 		--font: "Roboto";
-		--accentcolor: #d65c5c;
-		--accentcolor2: #d65c5c;
-		--linkcolor: #7788aa;
-		--mentioncolor: #ffaa88;
+		--accentcolor: 214, 92, 92;
+		--accentcolor2: 214, 92, 92;
+		--linkcolor: 119, 136, 170;
+		--mentioncolor: 255, 170, 136;
 		--textbrightest: 221, 221, 221;
 		--textbrighter: 221, 221, 221;
 		--textbright: 185, 185, 185;
