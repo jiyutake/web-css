@@ -1,0 +1,32 @@
+/* hides some elements from discord */
+
+/* blocked messages */
+[class^="blockedMessageText"],
+[class^="blockedIcon"],
+
+/* inbox, thread, notification, voice/video call, dm invite, user profile(only when unavailable, help icons */
+[aria-label="Inbox"],
+[aria-label="Threads"],
+[aria-label="Notification Settings"],
+[aria-label="Start Voice Call"],	
+[aria-label="Start Video Call"],
+[aria-label="Add Friends to DM"],
+[aria-label="Show User Profile (Unavailable)"],
+[href="https://support.discord.com"],
+
+/* nitro and shop buttons on DMs */
+a[data-list-item-id="private-channels-uid_19187___nitro"],
+a[data-list-item-id="private-channels-uid_19187___shop"],
+
+/* Hides message timestamps (meant for compact mode)*/
+/*time[id*="message-timestamp"],*/
+
+div[class="pill_a5ad63 wrapper_c4cd66"],
+
+/* application launcher, gift and sticker buttons */
+div[class="channelAppLauncher_df39bd"],
+button[aria-label="Send a gift"],
+button[aria-label="Open sticker picker"]
+{
+	display: none !important;
+}
